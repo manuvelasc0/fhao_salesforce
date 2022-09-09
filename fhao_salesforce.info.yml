@@ -1,0 +1,11 @@
+name: FHAO Salesforce Integration
+type: module
+description: Custom integrations between FHAO and Salesforce
+package: FHAO
+core_version_requirement: '^8 || ^9.1 || ^10'
+dependencies:
+  - key
+  - lockr
+  - salesforce
+  - salesforce_jwt
+version: '9.x-1.0'

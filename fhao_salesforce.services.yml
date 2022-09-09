@@ -1,0 +1,7 @@
+services:
+  fhao_salesforce.helper:
+    class: Drupal\fhao_salesforce\FhaoSalesforceHelper
+    arguments: ['@salesforce.client', '@logger.channel.default', '@cache.default', '@datetime.time', '@entity_type.manager']
+  fhao_salesforce.email_verification:
+    class: Drupal\fhao_salesforce\FhaoSalesforceEmailVerification
+    arguments: ['@salesforce.client', '@logger.channel.default']
